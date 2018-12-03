@@ -549,7 +549,7 @@
   )
 
   (module MCP16251_module:L_Taiyo-Yuden_NR-S-40xx_HS (layer F.Cu) (tedit 5C049BB5) (tstamp 5C04B4CD)
-    (at 157.48 78.74)
+    (at 149.86 71.12)
     (descr "Inductor, Taiyo Yuden, NR series, Taiyo-Yuden_NR-40xx, 4.0mmx4.0mm")
     (tags "inductor taiyo-yuden nr smd")
     (path /5C03B30E)
