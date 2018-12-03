@@ -461,7 +461,7 @@ F 3 "~" H 3300 5100 50  0001 C CNN
 	1    3300 5100
 	1    0    0    1   
 $EndComp
-Text GLabel 1500 1900 0    50   Input ~ 0
+Text GLabel 1100 2000 0    50   Input ~ 0
 VBAT_RAW
 Text GLabel 1900 4300 2    50   Input ~ 0
 VBAT_RAW
@@ -639,4 +639,15 @@ Wire Wire Line
 Wire Wire Line
 	1800 5600 1600 5600
 Connection ~ 1800 4900
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 5C07AA94
+P 1300 2000
+F 0 "SW?" H 1300 2290 50  0000 C CNN
+F 1 "SW_SPDT" H 1300 2197 50  0000 C CNN
+F 2 "" H 1300 2000 50  0001 C CNN
+F 3 "" H 1300 2000 50  0001 C CNN
+	1    1300 2000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
