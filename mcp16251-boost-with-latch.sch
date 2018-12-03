@@ -93,7 +93,7 @@ F 3 "" H 2500 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NPN_EBC Q2
+L Device:Q_NPN_BEC Q2
 U 1 1 5C03897A
 P 3300 2700
 F 0 "Q2" H 3490 2747 50  0000 L CNN
@@ -514,7 +514,7 @@ U 1 1 5C064B85
 P 6300 4300
 F 0 "J3" H 6379 4342 50  0000 L CNN
 F 1 "THT_Castellated" H 6379 4249 50  0000 L CNN
-F 2 "MCP16251_module:Conn_01x02_cast_mirrored" H 6300 4300 50  0001 C CNN
+F 2 "MCP16251_module:Conn_01x01_cast" H 6300 4300 50  0001 C CNN
 F 3 "~" H 6300 4300 50  0001 C CNN
 	1    6300 4300
 	1    0    0    -1  
