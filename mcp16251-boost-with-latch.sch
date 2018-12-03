@@ -4,13 +4,13 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "MCP16251T-based boost SMD module"
+Date "2018-12-02"
+Rev "1"
 Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
+Comment1 "creativecommons.org/licenses"
+Comment2 "CC BY-SA license"
+Comment3 "Vlad Belous"
 Comment4 ""
 $EndDescr
 Wire Wire Line

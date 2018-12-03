@@ -639,31 +639,4 @@ Wire Wire Line
 Wire Wire Line
 	1800 5600 1600 5600
 Connection ~ 1800 4900
-$Comp
-L Connector_Generic:Conn_01x02 J?
-U 1 1 5C076919
-P 3300 5600
-F 0 "J?" H 3450 5550 50  0000 L CNN
-F 1 "JST_PH_Header" H 3050 5750 50  0000 L CNN
-F 2 "" H 3300 5600 50  0001 C CNN
-F 3 "~" H 3300 5600 50  0001 C CNN
-	1    3300 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C076C8A
-P 3100 5700
-F 0 "#PWR?" H 3100 5450 50  0001 C CNN
-F 1 "GND" H 3105 5524 50  0000 C CNN
-F 2 "" H 3100 5700 50  0001 C CNN
-F 3 "" H 3100 5700 50  0001 C CNN
-	1    3100 5700
-	1    0    0    -1  
-$EndComp
-Connection ~ 2900 4900
-Wire Wire Line
-	2900 5600 3100 5600
-Wire Wire Line
-	2900 4900 2900 5600
 $EndSCHEMATC
