@@ -601,12 +601,10 @@ Wire Wire Line
 Connection ~ 2900 4300
 Wire Wire Line
 	2900 4300 3100 4300
-Text Notes 3900 5800 0    100  ~ 0
+Text Notes 3850 6250 0    100  ~ 0
 Headers, castellated pads and SMD pads
 Wire Notes Line
-	7300 3700 7300 6100
-Wire Notes Line
-	7300 6100 500  6100
+	7300 6400 500  6400
 $Comp
 L Connector_Generic:Conn_01x02 J9
 U 1 1 5C074DA3
@@ -677,4 +675,39 @@ Wire Wire Line
 	1200 2000 1300 2000
 Wire Wire Line
 	1600 1700 1800 1700
+Text GLabel 4800 5400 0    50   Input ~ 0
+PWR_CONTROL
+$Comp
+L Connector_Generic:Conn_01x01 J10
+U 1 1 5C08B0BD
+P 5700 5400
+F 0 "J10" H 5779 5442 50  0000 L CNN
+F 1 "THT_Castellated" H 5779 5349 50  0000 L CNN
+F 2 "MCP16251_module:Conn_01x01_cast" H 5700 5400 50  0001 C CNN
+F 3 "~" H 5700 5400 50  0001 C CNN
+	1    5700 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J11
+U 1 1 5C08B0C3
+P 5700 5700
+F 0 "J11" H 5780 5742 50  0000 L CNN
+F 1 "SMD_pad" H 5780 5649 50  0000 L CNN
+F 2 "MCP16251_module:SMD-Pad_01x01" H 5700 5700 50  0001 C CNN
+F 3 "~" H 5700 5700 50  0001 C CNN
+	1    5700 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 5400 5300 5400
+Wire Wire Line
+	5300 5400 5300 5700
+Wire Wire Line
+	5300 5700 5500 5700
+Connection ~ 5300 5400
+Wire Wire Line
+	5300 5400 5500 5400
+Wire Notes Line
+	7300 6400 7300 3700
 $EndSCHEMATC
