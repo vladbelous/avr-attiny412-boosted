@@ -2,6 +2,7 @@
 
 Voltage boost module based on MCP16251 ([datasheet](http://ww1.microchip.com/downloads/en/devicedoc/20005173b.pdf)) with a VBAT sense pin and ON/OFF "latch" pin for self-power-off.
 
+PCB size: 1.3" x 0.9" (33mm x 23mm).
 
 As soon as the microcontroller (powered by this module's output) turns on, it must pull PWR_CONTROL high.
 Afterwards, BAT_SENSE can be used to monitor battery voltage - if it goes too low, the MCU can pull PWR_CONTROL low (or just put it into High-Z mode) to cut power frome the regulator input.
