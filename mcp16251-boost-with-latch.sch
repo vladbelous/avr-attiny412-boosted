@@ -10,7 +10,7 @@ Date "2018-12-02"
 Rev "1"
 Comp ""
 Comment1 "creativecommons.org/licenses"
-Comment2 "CC BY-SA license"
+Comment2 "CC BY-SA 4.0 license"
 Comment3 "Vlad Belous"
 Comment4 ""
 $EndDescr
@@ -394,81 +394,41 @@ Text GLabel 1800 6000 2    50   Input ~ 0
 VBAT_RAW
 Text GLabel 2700 6000 0    50   Input ~ 0
 5V
-Text GLabel 7500 3900 0    50   Input ~ 0
-Vbat_raw_sense
 Wire Wire Line
-	7500 3900 7700 3900
-$Comp
-L Device:R R6
-U 1 1 5C060C0C
-P 7850 3900
-F 0 "R6" V 7640 3900 50  0000 C CNN
-F 1 "1k" V 7733 3900 50  0000 C CNN
-F 2 "MCP16251_module:R_0805_HS" V 7780 3900 50  0001 C CNN
-F 3 "~" H 7850 3900 50  0001 C CNN
-	1    7850 3900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8000 3900 8100 3900
-$Comp
-L Device:C C5
-U 1 1 5C061B9F
-P 8100 4150
-F 0 "C5" H 8215 4197 50  0000 L CNN
-F 1 "100nF" H 8215 4104 50  0000 L CNN
-F 2 "MCP16251_module:R_0805_HS" H 8138 4000 50  0001 C CNN
-F 3 "~" H 8100 4150 50  0001 C CNN
-	1    8100 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8100 3900 8100 4000
-Wire Wire Line
-	8100 4300 8100 4400
+	8900 3900 8900 4000
 $Comp
 L power:GND #PWR011
 U 1 1 5C063A39
-P 8100 4400
-F 0 "#PWR011" H 8100 4150 50  0001 C CNN
-F 1 "GND" H 8105 4224 50  0000 C CNN
-F 2 "" H 8100 4400 50  0001 C CNN
-F 3 "" H 8100 4400 50  0001 C CNN
-	1    8100 4400
+P 8900 4000
+F 0 "#PWR011" H 8900 3750 50  0001 C CNN
+F 1 "GND" H 8905 3824 50  0000 C CNN
+F 2 "" H 8900 4000 50  0001 C CNN
+F 3 "" H 8900 4000 50  0001 C CNN
+	1    8900 4000
 	1    0    0    -1  
 $EndComp
-Connection ~ 8100 3900
 $Comp
 L Connector_Generic:Conn_01x01 J3
 U 1 1 5C064B85
-P 9000 3900
-F 0 "J3" H 9079 3942 50  0000 L CNN
-F 1 "THT_Castellated" H 9079 3849 50  0000 L CNN
-F 2 "MCP16251_module:Conn_01x01_cast" H 9000 3900 50  0001 C CNN
-F 3 "~" H 9000 3900 50  0001 C CNN
-	1    9000 3900
+P 9600 3500
+F 0 "J3" H 9679 3542 50  0000 L CNN
+F 1 "THT_Castellated" H 9679 3449 50  0000 L CNN
+F 2 "MCP16251_module:Conn_01x01_cast" H 9600 3500 50  0001 C CNN
+F 3 "~" H 9600 3500 50  0001 C CNN
+	1    9600 3500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J4
 U 1 1 5C064C0E
-P 9000 4100
-F 0 "J4" H 9080 4142 50  0000 L CNN
-F 1 "SMD_pad" H 9080 4049 50  0000 L CNN
-F 2 "MCP16251_module:SMD-Pad_01x01" H 9000 4100 50  0001 C CNN
-F 3 "~" H 9000 4100 50  0001 C CNN
-	1    9000 4100
+P 9600 3700
+F 0 "J4" H 9680 3742 50  0000 L CNN
+F 1 "SMD_pad" H 9680 3649 50  0000 L CNN
+F 2 "MCP16251_module:SMD-Pad_01x01" H 9600 3700 50  0001 C CNN
+F 3 "~" H 9600 3700 50  0001 C CNN
+	1    9600 3700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8100 3900 8600 3900
-Wire Wire Line
-	8600 3900 8600 4100
-Wire Wire Line
-	8600 4100 8800 4100
-Connection ~ 8600 3900
-Wire Wire Line
-	8600 3900 8800 3900
 $Comp
 L power:GND #PWR09
 U 1 1 5C06736C
@@ -542,7 +502,7 @@ F 3 "~" H 1300 7300 50  0001 C CNN
 	1    1300 7300
 	-1   0    0    -1  
 $EndComp
-Text Notes 4800 6500 0    100  ~ 0
+Text Notes 5350 6450 0    100  ~ 0
 THT_Castellated = 5.08mm screw terminal,\ncombined with castellated edge
 $Comp
 L power:GND #PWR014
@@ -594,36 +554,36 @@ Wire Wire Line
 	1300 2050 1300 1900
 Wire Wire Line
 	1300 2050 1400 2050
-Text GLabel 5050 4000 0    50   Input ~ 0
+Text GLabel 4900 4000 0    50   Input ~ 0
 PWR_CONTROL
 $Comp
 L Connector_Generic:Conn_01x01 J10
 U 1 1 5C08B0BD
-P 5550 4100
-F 0 "J10" H 5629 4142 50  0000 L CNN
-F 1 "THT_Castellated" H 5629 4049 50  0000 L CNN
-F 2 "MCP16251_module:Conn_01x01_cast" H 5550 4100 50  0001 C CNN
-F 3 "~" H 5550 4100 50  0001 C CNN
-	1    5550 4100
+P 5400 4100
+F 0 "J10" H 5479 4142 50  0000 L CNN
+F 1 "THT_Castellated" H 5479 4049 50  0000 L CNN
+F 2 "MCP16251_module:Conn_01x01_cast" H 5400 4100 50  0001 C CNN
+F 3 "~" H 5400 4100 50  0001 C CNN
+	1    5400 4100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J11
 U 1 1 5C08B0C3
-P 5550 4300
-F 0 "J11" H 5630 4342 50  0000 L CNN
-F 1 "SMD_pad" H 5630 4249 50  0000 L CNN
-F 2 "MCP16251_module:SMD-Pad_01x01" H 5550 4300 50  0001 C CNN
-F 3 "~" H 5550 4300 50  0001 C CNN
-	1    5550 4300
+P 5400 4300
+F 0 "J11" H 5480 4342 50  0000 L CNN
+F 1 "SMD_pad" H 5480 4249 50  0000 L CNN
+F 2 "MCP16251_module:SMD-Pad_01x01" H 5400 4300 50  0001 C CNN
+F 3 "~" H 5400 4300 50  0001 C CNN
+	1    5400 4300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5150 4100 5150 4300
+	5000 4100 5000 4300
 Wire Wire Line
-	5150 4300 5350 4300
+	5000 4300 5200 4300
 Wire Wire Line
-	5150 4100 5350 4100
+	5000 4100 5200 4100
 $Comp
 L power:GND #PWR?
 U 1 1 5C25A557
@@ -695,11 +655,11 @@ F 3 "" H 3600 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 4100 2550 2    50   Input ~ 0
-STAGE1
+BOOST_EN
 Wire Wire Line
 	4000 2550 4100 2550
 Text GLabel 6050 2150 0    50   Input ~ 0
-STAGE1
+BOOST_EN
 Connection ~ 5950 1950
 Text Notes 3550 2400 0    50   ~ 0
 Vth = 2.93V
@@ -785,7 +745,7 @@ Wire Wire Line
 	1400 3700 1400 3800
 Text Notes 1500 3950 0    50   ~ 0
 Vth = 2.93V
-Text Notes 2150 3900 0    50   ~ 0
+Text Notes 2200 3900 0    50   ~ 0
 open-drain
 $Comp
 L power:GND #PWR?
@@ -799,12 +759,12 @@ F 3 "" H 1500 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 2200 4000 2    50   Input ~ 0
-STAGE2
+uC_RESET
 Wire Wire Line
-	5050 4000 5150 4000
+	4900 4000 5000 4000
 Wire Wire Line
-	5150 4000 5150 4100
-Connection ~ 5150 4100
+	5000 4000 5000 4100
+Connection ~ 5000 4100
 $Comp
 L Connector_Generic:Conn_01x01 J?
 U 1 1 5C331E26
@@ -834,9 +794,9 @@ Wire Wire Line
 	2550 4200 2550 4400
 Text Notes 2050 7500 0    100  ~ 0
 Power supply headers,\ncastellated and SMD pads
-Text Notes 4950 5050 0    100  ~ 0
+Text Notes 4750 5250 0    100  ~ 0
 Power-on/off\ncontrol header
-Text Notes 950  5000 0    100  ~ 0
+Text Notes 950  5200 0    100  ~ 0
 Voltage supervisor for microcontroller
 Wire Wire Line
 	1900 4100 2100 4100
@@ -874,115 +834,38 @@ $EndComp
 $Comp
 L Device:Q_PMOS_GSD Q?
 U 1 1 5C47FB36
-P 12850 5300
-F 0 "Q?" V 13196 5300 50  0000 C CNN
-F 1 "Q_PMOS_GSD" V 13103 5300 50  0000 C CNN
-F 2 "" H 13050 5400 50  0001 C CNN
-F 3 "~" H 12850 5300 50  0001 C CNN
-	1    12850 5300
+P 7800 3600
+F 0 "Q?" V 8146 3600 50  0000 C CNN
+F 1 "Q_PMOS_GSD" V 8053 3600 50  0000 C CNN
+F 2 "" H 8000 3700 50  0001 C CNN
+F 3 "~" H 7800 3600 50  0001 C CNN
+	1    7800 3600
 	0    1    -1   0   
 $EndComp
 $Comp
 L Device:Q_PMOS_GSD Q?
 U 1 1 5C47FB3C
-P 12150 5300
-F 0 "Q?" V 12496 5300 50  0000 C CNN
-F 1 "Q_PMOS_GSD" V 12403 5300 50  0000 C CNN
-F 2 "" H 12350 5400 50  0001 C CNN
-F 3 "~" H 12150 5300 50  0001 C CNN
-	1    12150 5300
+P 7100 3600
+F 0 "Q?" V 7446 3600 50  0000 C CNN
+F 1 "Q_PMOS_GSD" V 7353 3600 50  0000 C CNN
+F 2 "" H 7300 3700 50  0001 C CNN
+F 3 "~" H 7100 3600 50  0001 C CNN
+	1    7100 3600
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 5C47FB42
-P 12450 5350
-F 0 "R?" H 12300 5450 50  0000 L CNN
-F 1 "100k" H 12200 5350 50  0000 L CNN
-F 2 "MCP16251_module:R_0805_HS" V 12380 5350 50  0001 C CNN
-F 3 "~" H 12450 5350 50  0001 C CNN
-	1    12450 5350
+P 7450 3650
+F 0 "R?" H 7300 3650 50  0000 L CNN
+F 1 "100k" H 7200 3750 50  0000 L CNN
+F 2 "MCP16251_module:R_0805_HS" V 7380 3650 50  0001 C CNN
+F 3 "~" H 7450 3650 50  0001 C CNN
+	1    7450 3650
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	12850 5500 12450 5500
-Wire Wire Line
-	12350 5200 12450 5200
-Text GLabel 11550 5200 0    50   Input ~ 0
-3-4.2V
-Wire Wire Line
-	13050 5200 13350 5200
-Text GLabel 13350 5200 2    50   Input ~ 0
+Text GLabel 9400 3300 2    50   Input ~ 0
 uC_ADC
-Connection ~ 12450 5500
-Wire Wire Line
-	12450 5500 12150 5500
-$Comp
-L Device:Q_NPN_BEC Q?
-U 1 1 5C47FB57
-P 12550 5900
-F 0 "Q?" H 12742 5947 50  0000 L CNN
-F 1 "Q_NPN_BEC" H 12742 5854 50  0000 L CNN
-F 2 "" H 12750 6000 50  0001 C CNN
-F 3 "~" H 12550 5900 50  0001 C CNN
-	1    12550 5900
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5C47FB5D
-P 12850 5900
-F 0 "R?" H 12700 6000 50  0000 L CNN
-F 1 "100k" H 12600 5900 50  0000 L CNN
-F 2 "MCP16251_module:R_0805_HS" V 12780 5900 50  0001 C CNN
-F 3 "~" H 12850 5900 50  0001 C CNN
-	1    12850 5900
-	0    -1   1    0   
-$EndComp
-Text GLabel 13100 5600 2    50   Input ~ 0
-5V
-$Comp
-L power:GND #PWR?
-U 1 1 5C47FB64
-P 12450 6100
-F 0 "#PWR?" H 12450 5850 50  0001 C CNN
-F 1 "GND" H 12454 5921 50  0000 C CNN
-F 2 "" H 12450 6100 50  0001 C CNN
-F 3 "" H 12450 6100 50  0001 C CNN
-	1    12450 6100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5C47FB6A
-P 13050 5750
-F 0 "R?" H 12900 5800 50  0000 L CNN
-F 1 "100k" H 12800 5700 50  0000 L CNN
-F 2 "MCP16251_module:R_0805_HS" V 12980 5750 50  0001 C CNN
-F 3 "~" H 13050 5750 50  0001 C CNN
-	1    13050 5750
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	12950 5900 13050 5900
-Wire Wire Line
-	13050 5850 13050 5900
-Connection ~ 13050 5900
-Wire Wire Line
-	13050 5900 13300 5900
-Wire Wire Line
-	13050 5650 13050 5600
-Wire Wire Line
-	13050 5600 13100 5600
-Wire Wire Line
-	12450 5200 12450 5250
-Connection ~ 12450 5200
-Wire Wire Line
-	12450 5200 12650 5200
-Wire Wire Line
-	12450 5450 12450 5500
-Wire Wire Line
-	11550 5200 11950 5200
 Wire Wire Line
 	12350 3950 12500 3950
 Text GLabel 11750 3850 0    50   Input ~ 0
@@ -1046,8 +929,6 @@ Wire Wire Line
 	11600 3250 12000 3250
 Wire Wire Line
 	12500 3550 12500 3950
-Wire Wire Line
-	12450 5500 12450 5700
 $Comp
 L power:GND #PWR?
 U 1 1 5C4E360B
@@ -1065,6 +946,108 @@ Wire Wire Line
 	11900 3600 11950 3600
 Wire Wire Line
 	11950 3600 11950 3650
-Text Notes 7450 4950 0    100  ~ 0
-TODO: needs fixing!
+Text Notes 3900 2700 0    50   ~ 0
+push-pull
+$Comp
+L _Project_Local:MIC2777 U?
+U 1 1 5C4FDBC3
+P 8100 4300
+F 0 "U?" H 7950 4050 50  0000 C CNN
+F 1 "MIC2777" H 7850 3950 50  0000 C CNN
+F 2 "" H 8100 4300 50  0001 C CNN
+F 3 "" H 8100 4300 50  0001 C CNN
+	1    8100 4300
+	-1   0    0    -1  
+$EndComp
+Text GLabel 8550 4000 2    50   Input ~ 0
+5V
+Wire Wire Line
+	8500 4100 8500 4000
+Wire Wire Line
+	8500 4000 8550 4000
+Wire Wire Line
+	8500 4300 8500 4100
+Connection ~ 8500 4100
+Text Notes 8050 3950 0    50   ~ 0
+Vth = 4.68V
+$Comp
+L power:GND #PWR?
+U 1 1 5C51BA94
+P 8100 4700
+F 0 "#PWR?" H 8100 4450 50  0001 C CNN
+F 1 "GND" H 8104 4521 50  0000 C CNN
+F 2 "" H 8100 4700 50  0001 C CNN
+F 3 "" H 8100 4700 50  0001 C CNN
+	1    8100 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 4300 7650 4300
+NoConn ~ 7650 4100
+Wire Wire Line
+	7450 3500 7450 3550
+Wire Wire Line
+	7450 3750 7450 3800
+Wire Wire Line
+	7100 3800 7450 3800
+Wire Wire Line
+	7300 3500 7450 3500
+Wire Wire Line
+	6750 3500 6900 3500
+Text GLabel 6750 3500 0    50   Input ~ 0
+Vbat_raw_sense
+Text Notes 6700 5150 0    100  ~ 0
+VBAT_RAW voltage sensing switch and pins
+$Comp
+L Device:R R?
+U 1 1 5C5BCDE2
+P 8650 3500
+F 0 "R?" V 8440 3500 50  0000 C CNN
+F 1 "1k" V 8533 3500 50  0000 C CNN
+F 2 "MCP16251_module:R_0805_HS" V 8580 3500 50  0001 C CNN
+F 3 "~" H 8650 3500 50  0001 C CNN
+	1    8650 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C5BCE9A
+P 8900 3750
+F 0 "C?" H 9015 3797 50  0000 L CNN
+F 1 "100nF" H 9015 3704 50  0000 L CNN
+F 2 "MCP16251_module:R_0805_HS" H 8938 3600 50  0001 C CNN
+F 3 "~" H 8900 3750 50  0001 C CNN
+	1    8900 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 3500 8900 3600
+Wire Wire Line
+	9400 3700 9300 3700
+Wire Wire Line
+	9300 3700 9300 3500
+Connection ~ 9300 3500
+Wire Wire Line
+	9300 3500 9400 3500
+Wire Wire Line
+	8800 3500 8900 3500
+Connection ~ 8900 3500
+Wire Wire Line
+	7450 3500 7600 3500
+Connection ~ 7450 3500
+Wire Wire Line
+	7800 3800 7450 3800
+Connection ~ 7450 3800
+Wire Wire Line
+	7450 3800 7450 4300
+Wire Wire Line
+	8000 3500 8500 3500
+Wire Wire Line
+	8900 3500 9300 3500
+Wire Wire Line
+	9300 3300 9400 3300
+Wire Wire Line
+	9300 3300 9300 3500
+Text Notes 7400 4450 0    50   ~ 0
+push-pull
 $EndSCHEMATC
