@@ -1,5 +1,7 @@
 # MCP16251-based voltage boost module
 
+## DO NOT USE THIS DESIGN! IT CONTAINS SOME MISTAKES.
+
 Voltage boost module based on MCP16251 ([datasheet](http://ww1.microchip.com/downloads/en/devicedoc/20005173b.pdf)) with a VBAT sense pin and ON/OFF "latch" pin for self-power-off.
 
 PCB size: 1.3" x 0.9" (33mm x 23mm).
