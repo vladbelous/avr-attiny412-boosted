@@ -1,3 +1,3 @@
 (sym_lib_table
-  (lib (name _Project_Local)(type Legacy)(uri ${KIPRJMOD}/_Project_Local.lib)(options "")(descr ""))
+  (lib (name local_symbols)(type Legacy)(uri ${KIPRJMOD}/libs/symbols.lib)(options "")(descr ""))
 )

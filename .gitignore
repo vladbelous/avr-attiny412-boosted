@@ -1,2 +1,7 @@
 .DS_Store
 /docs/*
+*-bak
+*.bak
+*-cache.lib
+/libs/*.dcm
+/libs/*.bck
