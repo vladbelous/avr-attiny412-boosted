@@ -1,6 +1,6 @@
-update=Saturday, April 06, 2019 at 09:53:15 PM
+update=Saturday, April 06, 2019 at 11:40:31 PM
 version=1
-last_client=kicad
+last_client=eeschema
 [general]
 version=1
 RootSch=
@@ -71,3 +71,13 @@ Type=2
 [pcbnew/Layer.B.Cu]
 Name=B.Cu
 Type=2
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1

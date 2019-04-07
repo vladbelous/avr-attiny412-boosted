@@ -1,9 +1,10 @@
 # Attiny412-based board with on-board boost regulator
 
-Design with KiCad 5 (www.kicad-pcb.org).
+TODO: description
+Designed with KiCad 5 (www.kicad-pcb.org).
 
 ## Schematic:
-TODO
+![schematic](img/schematic.png)
 
 ## Layout:
 TODO
