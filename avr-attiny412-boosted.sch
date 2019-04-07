@@ -116,17 +116,6 @@ F 3 "" H 4200 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J1
-U 1 1 5CA68B1C
-P 1600 1900
-F 0 "J1" H 1750 1900 50  0000 C CNN
-F 1 "BAT_JST_PH" H 1900 1800 50  0000 C CNN
-F 2 "" H 1600 1900 50  0001 C CNN
-F 3 "~" H 1600 1900 50  0001 C CNN
-	1    1600 1900
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Device:Polyfuse F1
 U 1 1 5CA6AFCA
 P 2150 1900
@@ -865,4 +854,15 @@ Wire Wire Line
 Wire Wire Line
 	9500 3900 9500 4500
 Connection ~ 9200 3900
+$Comp
+L local_symbols:JST_PH_BAT JST_PH_BAT1
+U 1 1 5CBEFBE8
+P 1600 1900
+F 0 "JST_PH_BAT1" H 1550 2050 50  0000 C CNN
+F 1 "JST_PH_BAT" H 1550 1700 50  0001 C CNN
+F 2 "" H 1600 1900 50  0001 C CNN
+F 3 "~" H 1600 1900 50  0001 C CNN
+	1    1600 1900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

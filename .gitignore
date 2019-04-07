@@ -5,3 +5,4 @@
 *-cache.lib
 /libs/*.dcm
 /libs/*.bck
+*-info-cache
