@@ -7,4 +7,4 @@ Designed with KiCad 5 (www.kicad-pcb.org).
 ![schematic](img/schematic.png)
 
 ## Layout:
-TODO
+![layout](img/pcb_layout.png)
