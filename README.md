@@ -7,7 +7,7 @@ Two powering options:
 * Single/double AA battery: can skip MIC809 and place R1 instead -- this will put boost regulator in always-on mode.
 
 Optional:
-* Power switch IC for the common use case of driving a LED strip (WS2812B, APA106, etc), or other, possibly capacitative, loads.
+* Power distribution switch IC (MIC9409x) for the common use case of driving a LED strip (WS2812B, APA106, etc), or other, possibly capacitative, loads.
 * Pull-up resistors for I2C on botton side (on pins PA1 = SDA, and PA2 = SCL).
 
 Designed with KiCad 5 (www.kicad-pcb.org).
@@ -17,3 +17,6 @@ Designed with KiCad 5 (www.kicad-pcb.org).
 
 ## Layout:
 ![layout](img/pcb_layout.png)
+
+## Assembled:
+![layout](img/pcb_assembled.png)
