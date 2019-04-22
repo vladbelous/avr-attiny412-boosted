@@ -19,4 +19,4 @@ Designed with KiCad 5 (www.kicad-pcb.org).
 ![layout](img/pcb_layout.png)
 
 ## Assembled:
-![layout](img/pcb_assembled.png)
+![layout](img/pcb_assembled.jpg)
